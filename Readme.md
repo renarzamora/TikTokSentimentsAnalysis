@@ -16,6 +16,8 @@ Here is a general word cloud map by taking the reviews
 ![alt text](Word_cloud_map1.png)
 
 Next, we create the sentiment analysis using SentimentIntensityAnalyzer, for which we add three new columns in our data frame.
+![alt text](eda_picture1.png)
+
 Here, the Positive word cloud.
 ![alt text](Word_cloud_map2.png)
 
