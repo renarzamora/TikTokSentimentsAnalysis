@@ -6,6 +6,7 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from nltk.corpus import stopwords
 import string
 import re
+import os
 
 # Download necessary NLTK data
 nltk.download('stopwords')
@@ -93,5 +94,6 @@ class TikTokAnalyzer():
 # Usage example
 if __name__ == '__main__':
     analyzer = TikTokAnalyzer()
-    analyzer.load_data('D:\\Datascienceprojects\\Data_Analytics\\TikTok_Reviews_Sentiment_Analysis\\tiktok_google_play_reviews.csv')
+    dataset_file = os.getcwd()+'/tiktok_google_play_reviews.csv'
+    analyzer.load_data(dataset_file)
     analyzer.eda_process()
